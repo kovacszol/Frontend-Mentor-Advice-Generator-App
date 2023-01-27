@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 28px;
+    background-color: hsl(218, 23%, 16%);
+    color: red;
+}
+
+#mainBox {
+    background-color: hsl(217, 19%, 24%);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    width: 50vw;
+}
+
+#dividerImg {
+    margin: 20px;
+}
+
+#diceButton {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: hsl(150, 100%, 66%);
+    position: absolute;
+    bottom: -30;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#diceButton:focus,
+#dicebutton:active {
+    outline: none;
+}
+
+#diceButton:hover {
+    box-shadow: 0px 0px 25px hsl(150, 100%, 66%);
+}
+
+#advice {
+    color: hsl(193, 38%, 86%);
+}
+
+#adviceIdText,
+#adviceId {
+    color: hsl(150, 100%, 66%);
+    font-size: 10px;
+    letter-spacing: 5px;
+}
+
+@media (max-width: 1000px) {
+    #dividerImg {
+        content: url("./images/pattern-divider-mobile.svg");
+        width: 100%;
+    }
+
+    #mainBox {
+        display: block;
+        width: 90vw;
+    }
+
+}
